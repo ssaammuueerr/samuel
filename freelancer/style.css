@@ -1,0 +1,412 @@
+:root{
+    --primario: #3ED661;
+    --azul: #3498DB;
+    --ama: #F1C40F;
+    --gris:#707B7C;
+    --blanco: #ffffff;
+    --grisclaro: #DFE9F3;
+
+}   
+ 
+html{
+    font-size: 62.5%;
+    /* scroll-snap-type: y mandatory; */
+}
+
+/* .servicios,
+.navegacion-uno,
+.formulario{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}   */
+body{
+    background-image: linear-gradient(to top, #DFE9F3 1%, var(--blanco) 100%);
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    font-weight: 300;
+    
+}
+
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+.titulo{
+    
+    font-size: 4.8rem;
+    /* border: 1px solid red; */
+    
+}
+
+h1.titulo span{
+    font-size: 2rem;
+    color: var(--azul);
+    display: block;
+    /* border: 1px solid red; */
+    
+
+}
+
+@media (min-width: 768px) { 
+    h1.titulo span{
+        display: inline;
+    }
+} 
+
+
+
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 115rem;
+}
+
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: .8rem;
+    
+}
+
+.boton{
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    /* margin-top: 12rem; */
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: .75rem;
+    font-weight: 700;
+    font-size: 2rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 768px) { 
+    .boton{
+        width: auto
+    }
+} 
+
+/*Utilidades*/
+.w-100{
+    width: 100%;
+}
+
+@media (min-width: 768px) { 
+    .w-100{
+        width:auto
+    }
+} 
+.flex{
+    display: flex;
+}
+.aling-der{
+    justify-content: flex-end;
+
+}
+
+.cont{
+    margin-bottom: 4rem
+}
+
+.parrafo-centrado{
+    text-align: justify;
+}
+
+/* Navegacion principal*/
+.nav-bg{
+    background-color: var(--azul);
+    
+}
+
+/* .out{
+    outline: 1px solid red;
+
+} */
+
+
+.navegacion-uno{
+    /* outline: .5px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    max-width: 120rem;
+    font-size: 1.8rem;
+    /* align-items: center; */
+
+}
+
+@media (min-width: 768px) { 
+    .navegacion-uno{
+        flex-direction: row;
+        
+    }
+    
+} 
+
+@media (max-width: 768px) { 
+    .navegacion-uno{
+        width: 100%;        
+    }
+    
+} 
+
+
+
+.navegacion-uno a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: normal;
+    padding: 2rem 3rem;
+    /* outline: 1px solid red; */
+    width: 25%; 
+    text-align: center;
+
+
+}
+
+@media (max-width: 768px) { 
+    .navegacion-uno a{
+        width: 100%;
+    
+    }
+    
+} 
+
+.navegacion-uno a:hover{
+    background-color:var(--ama);
+    color: black;
+}
+
+.hero{
+    background-image: url(../img/1863869.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-position: top;
+    height: 500px;
+    position: relative;
+    margin-bottom: 3rem;
+
+
+}
+
+.contenido-hero{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5); 
+    /* forma anterior  la de arriba*/
+    background-color: rgb(0 0 0 / 50% );
+    width: 100%;
+    height: 100%;
+    
+    /*sirve para alinear todo*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    
+}
+
+.contenido-hero h2, .contenido-hero p{
+    color: var(--blanco);
+    
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* outline: 1px solid red; */
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    position: absolute;
+    bottom: 0;
+    
+
+}
+
+.ubi{
+    display: flex;
+    align-items: center;
+}
+
+.ubi1{
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid blue; */
+    
+    position: absolute;
+    top: 8%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+
+}
+
+.ubi1 h2, .ubi1 span{
+    font-size: 4.8rem;
+} 
+
+.nolist{
+    list-style: none;
+}
+
+ 
+
+/* Servicios */
+@media (min-width: 768px) { 
+    .servicios{
+        display: grid;
+        /* outline: 1px solid red; */
+        /* grid-template-columns: 25% 25% 25% 25%; */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
+        margin-top: 1.2rem;
+
+
+    }
+} 
+
+.servicio{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
+    /* cuando cambiamos la direcion de flexbox que por dececto es row, justify content ya no es opcion, se usa aling-item */
+
+
+}
+
+.servicio h3{
+   color: var(--azul);
+   font-weight: 400;
+   margin: 2.8rem 0;
+
+}
+
+.servicio p, ul{
+    line-height: 2.8rem;
+    text-align: justify;
+    margin: 2.8rem 0;
+
+}
+
+
+
+.servicio .icono{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--ama);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Contacto */
+
+.formulario{
+    background-color: var(--gris);
+    width: min( 60rem, 100%); /*utiliza el valor mas pequeño*/
+    margin: 0 auto; /*centrat horizontalmente, se usa cuando el padre no es display flex */
+    padding: 2rem;
+    border-radius: 1rem;
+
+
+
+}
+
+.formulario fieldset{
+    border: none;
+
+}
+.formulario legend{
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--ama);
+    margin-bottom: 2rem;
+
+}
+
+@media (min-width: 768px) { 
+    .contenedor-campo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+    }
+
+
+} 
+
+.campo:nth-child(3),
+.campo:nth-child(4){
+    grid-column: 1 / 3 ;
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+/*.campo input[type="text"]{
+     background-color: red; 
+      
+}*/
+/* .campo input[type="text"], 
+.campo input[type="email"]{
+    background-color: red;
+      
+} */  este es por si quiero selecionar varios para lo mismo con mas especificidad
+
+.campo textarea{
+    height: 15rem;
+}
+
+.input-tex{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.footer{
+    text-align: center;
+    margin: 5rem 0;
+}
+
+
